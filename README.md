@@ -28,8 +28,13 @@ Sau khi tệp đã được tải lên, bạn có thể truy cập nó từ Kagg
 -  Nhấp vào nút Add.
 Sau khi các tập dữ liệu đã được thêm vào dự án, bạn có thể ấn Run,chọn Run All để chạy toàn bộ notebook.
 
+## đối với file Data_collection.ipynb, Speech-emotion-recognition-train.ipynb
+-  2 file này được tách đôi từ speech-emotion-recognition.ipynb :
+-    Data_collection.ipynb dùng để tạo ra file Emotion.csv
+-    speech-emotion-recognition-train.ipynb sử dụng trực tiếp file Emotion.csv để huấn luyện mô hình
+   (chủ yếu là CNN model-mô hình tốt nhất để lấy lại file encoder, file weight phục vụ cho việc inferience)
 
-Lưu ý
+## Lưu ý
 
 Bạn cần có tài khoản Kaggle để tải lên và truy cập các tập dữ liệu.
 Bạn cần có Python 3 và các thư viện sau để chạy mô hình:
@@ -40,5 +45,8 @@ Bạn cần có Python 3 và các thư viện sau để chạy mô hình:
 -  tensorflow
 -  keras
 
-# Đối với file inferience.py
+# Đối với file inference.py
+- Cần có các file best-model-local-weight.h5 , encoder.pkl, scaler.pkl
+- Để chạy, cần máy tính có GPU đủ mạnh
+- Để thử với các file âm thanh khác (định dạng wav), cần có đường dẫn của file, cũng như nhãn cảm xúc được xác định sẵn ( dùng để test mô hình)
 Chúc bạn thành công!
