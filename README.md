@@ -49,4 +49,6 @@ Bạn cần có Python 3 và các thư viện sau để chạy mô hình:
 - Cần có các file best-model-local-weight.h5 , encoder.pkl, scaler.pkl
 - Để chạy, cần máy tính có GPU đủ mạnh
 - Để thử với các file âm thanh khác (định dạng wav), cần có đường dẫn của file, cũng như nhãn cảm xúc được xác định sẵn ( dùng để test mô hình)
-Chúc bạn thành công!
+
+
+#Chúc bạn thành công!
